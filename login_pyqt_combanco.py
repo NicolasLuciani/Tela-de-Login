@@ -1,7 +1,6 @@
 from PyQt6.QtWidgets import *
 from PyQt6.QtCore import Qt
 import sqlite3
-import sys
 
 conexao = sqlite3.connect("usuarios.db")
 meu_cursor = conexao.cursor()
@@ -184,4 +183,4 @@ layout.addWidget(botao_cadastro)
 janela.setLayout(layout)
 janela.show()
 
-sys.exit(app.exec())
+(app.exec())
